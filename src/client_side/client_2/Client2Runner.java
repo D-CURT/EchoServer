@@ -9,7 +9,7 @@ import java.net.UnknownHostException;
 
 public class Client2Runner {
     public static void main(String[] args) {
-        String host = "127.0.0.2";
+        String host = "127.0.0.1";
         int port = 8020;
 
         try (Socket socket = new Socket(host, port);
@@ -18,9 +18,9 @@ public class Client2Runner {
 
             out.println("Hi there, i`m Sean");
             System.out.println("Server answered: " + in.readLine());
-            /*while (true) {
+            while (true) {
 
-            }*/
+            }
         } catch (UnknownHostException e) {
             System.out.println("Wrong host!");
         } catch (IOException e) {

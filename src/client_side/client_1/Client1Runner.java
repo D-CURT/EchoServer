@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class ClientRunner {
+public class Client1Runner {
     public static void main(String[] args) {
         String host = "127.0.0.1";
         int port = 8020;
@@ -18,9 +18,9 @@ public class ClientRunner {
 
             out.println("Hi there, i`m Max.");
             System.out.println("Server answered: " + in.readLine());
-           /* while (true) {
+            while (true) {
 
-            }*/
+            }
         } catch (UnknownHostException e) {
             System.out.println("Wrong host!");
         } catch (IOException e) {
