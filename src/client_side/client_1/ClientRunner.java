@@ -18,9 +18,9 @@ public class ClientRunner {
 
             out.println("Hi there, i`m Max.");
             System.out.println("Server answered: " + in.readLine());
-            while (true) {
+           /* while (true) {
 
-            }
+            }*/
         } catch (UnknownHostException e) {
             System.out.println("Wrong host!");
         } catch (IOException e) {
