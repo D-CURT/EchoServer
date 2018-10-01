@@ -21,7 +21,7 @@ public class MBicicleRunable implements Runnable {
 
             String input = in.readLine();
             out.println("Client wrote: " + input);
-            System.out.println(" talk: " + input);
+            System.out.println(" client talks: " + input);
         } catch (IOException e) {
             e.printStackTrace();
         }

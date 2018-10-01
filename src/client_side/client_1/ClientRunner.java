@@ -16,8 +16,11 @@ public class ClientRunner {
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
 
-            out.println("Hi there, it`s client 1!");
+            out.println("Hi there, i`m Max.");
             System.out.println("Server answered: " + in.readLine());
+            while (true) {
+
+            }
         } catch (UnknownHostException e) {
             System.out.println("Wrong host!");
         } catch (IOException e) {

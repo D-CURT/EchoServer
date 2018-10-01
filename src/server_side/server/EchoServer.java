@@ -9,14 +9,19 @@ import java.net.Socket;
 public class EchoServer  {
     private int port = 8020;
     private ServerSocket socket;
-    private int clientCounter = 0;
 
     public void serverUp() {
+        int clientCounter = 0;
+        boolean isStart = false;
         try {
             socket = new ServerSocket(port);
 
             while (true) {
                 Socket clientSocket = socket.accept();
+                if (!isStart) {
+                    System.out.println("Server is active!");
+                    isStart = true;
+                }
                 new Thread(new MBicicleRunable(clientSocket)).start();
                 System.out.print(++clientCounter);
             }
@@ -25,9 +30,5 @@ public class EchoServer  {
         }
 
 
-    }
-
-    public int getClientCounter() {
-        return clientCounter;
     }
 }
