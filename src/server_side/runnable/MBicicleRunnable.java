@@ -20,7 +20,7 @@ public class MBicicleRunnable implements Runnable {
              PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true)){
 
             String input = in.readLine();
-            out.println("Client wrote: " + input);
+            out.println(input);
             System.out.println(" client says: " + input);
         } catch (IOException e) {
             e.printStackTrace();

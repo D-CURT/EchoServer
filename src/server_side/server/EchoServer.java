@@ -10,6 +10,13 @@ public class EchoServer  {
     private int port = 8020;
     private ServerSocket socket;
 
+    public EchoServer() {
+    }
+
+    public EchoServer(int port) {
+        this.port = port;
+    }
+
     public void serverUp() {
         int clientCounter = 0;
         boolean isStart = false;
@@ -28,7 +35,5 @@ public class EchoServer  {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
