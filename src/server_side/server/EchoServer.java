@@ -1,6 +1,6 @@
 package server_side.server;
 
-import server_side.runnable.MBicicleRunnable;
+import server_side.runnable.MBicycleRunnable;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -29,7 +29,7 @@ public class EchoServer  {
                     System.out.println("Server is active!");
                     isStart = true;
                 }
-                new Thread(new MBicicleRunnable(clientSocket)).start();
+                new Thread(new MBicycleRunnable(clientSocket)).start();
                 System.out.print(++clientCounter);
             }
         } catch (IOException e) {

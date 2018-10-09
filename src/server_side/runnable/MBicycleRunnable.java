@@ -6,10 +6,10 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class MBicicleRunnable implements Runnable {
+public class MBicycleRunnable implements Runnable {
     private Socket clientSocket;
 
-    public MBicicleRunnable(Socket clientSocket) {
+    public MBicycleRunnable(Socket clientSocket) {
         this.clientSocket = clientSocket;
     }
 
